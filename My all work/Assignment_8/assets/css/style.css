@@ -1,0 +1,461 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    overflow-x: hidden;
+    margin: 1rem;
+    width: 100%;
+}
+.header{
+
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    left: 75%;
+}
+.link{
+    text-decoration: none;
+    padding-right: 2em;
+    color: black;
+    font-weight: 600;
+}
+.nav-btn{
+    display: none;
+}
+#nav-check{
+    display: none;
+}
+.nav-links{
+    display: inline;
+    font-size: 3vh;
+    position: relative;
+    left: 75%;
+}
+.first-content-div{
+    display: flex;
+    margin-top: 6rem;
+    padding: 0rem 10rem 2rem 10rem;
+}
+.intro{
+    width: 525px;
+}
+.heading1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1rem;
+}
+.heading2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1rem;
+}
+.para-first{
+    margin-top: 2rem;
+    text-align: justify;
+}
+.btn{
+    background-color: #FF6464;
+    color: white;
+    border: none;
+    height: 30px;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.profile{
+    position: absolute;
+    left: 69%;
+    height: 58%;
+}
+.display-picture{
+    height: 60% !important;
+    cursor: pointer;
+}
+.second-content-div{
+    padding: 0rem 10rem 2rem 10rem;
+    background-color: #EDF7FA;
+    height: 350px;
+}
+.recent-post{
+    padding-top: 1rem;
+}
+.view{
+    text-decoration: none;
+    position: absolute;
+    right: 19%;
+    font-size: 12px;
+}
+.post-first{
+    margin-top: 1rem;
+    width: 38%;
+    padding: 1rem;
+    background-color: white;
+    
+}
+.heading{
+    line-height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.post-second{
+    margin-top: 1rem;
+    width: 38%;
+    padding: 1rem;
+    background-color: white;
+    position: relative;
+    left: 55%;
+    top: -279px;
+}
+.works{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    position: absolute;
+    left: 14%;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.work-list{
+    display: flex;
+}
+.image-part{
+    padding: 5rem 0rem 1rem 10rem;
+}
+.content-part{
+    padding: 3rem 0rem 1rem 1rem;
+    width: 50%;
+}
+.publish-time{
+    display: flex;
+}
+.year{
+    background-color: #142850;
+    color: white;
+    padding: 1px 0px 0px 5px;
+    width: 42px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+}
+.After-year{
+    color: #8695A4;
+}
+.line{
+    width: 75%;
+    border: 1px solid #E0E0E0;
+}
+.footer{
+    text-align: center;
+    padding: 8rem 0rem 0rem 0rem;
+}
+.icon{
+    font-size: 5vh;
+    padding: 0rem 2rem 0rem 0rem;
+    cursor: pointer;
+}
+.copyrights{
+    font-size: 2vh;
+    color: #21243D;
+    position: absolute;
+    left: 42%;
+}
+@media(max-width:420px){
+    body{
+    overflow-x: hidden;
+    }
+    .container{
+        overflow-x: hidden;
+        padding: 0rem;
+        width: 140vw;
+    }
+    .navbar{
+        display: none;
+    }
+    .container > .navbar {
+    position: relative;
+    left: 59%;
+    top: -1%;
+    
+    }
+    .container > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    top: 2em;
+    left: 31em;
+    }
+    .container > .nav-btn > label {
+    display: inline-block;
+    width: 13vh;
+    height: 11vh;
+    padding: 13px;
+    }
+    .container > .nav-btn > label > span {
+    display: block;
+    width: 6vh;
+    height: 2vh;
+    border-top: 4px solid #21243D;
+    }
+    .container > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+    }
+    .container > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    }
+    .container > .nav-links {
+    position: absolute;
+    display: block;
+    width: 46vh;
+    line-height: 4vh;
+    transition: all 0.1s ease-in;
+    overflow-y: hidden;
+    top: 3em;
+    left: 8em;
+    }
+    .container > .nav-links > a {
+    background: white !important;
+    display: block;
+    width: 103px;
+    position: relative;
+    left: 68%;
+    top:3%;
+    }
+    .profile{
+        position: absolute;
+    left: 38%;
+    top: 18%;
+    }
+    .first-content-div{
+        width: 160%;
+    }
+    .intro{
+        position: relative;
+        top: 26rem;
+        left: -1rem;
+        text-align: center;
+        width: 74vw;
+    }
+    .heading1{
+        line-height: 2px;
+        font-size: 45px;
+    }
+    .heading2{
+        line-height: 40px;
+        font-size: 45px;
+    }
+    .para-first{
+        width: 43vh;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    left: -3rem;
+    line-height: 26px;
+    }
+    .btn{
+        position: relative;
+        left: -1rem;
+        width: 52vw;
+        height: 6vh;
+        font-size: 20px;
+    }
+    .second-content-div{
+        display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 27rem;
+    height: 104vh;
+    }
+    .recent-post{
+        position: relative;
+        left: 3rem;
+        font-size: 3vh;   
+    }
+    .view{
+        display: none;
+    }
+    .post-first{
+        position: relative;
+        left: -9rem;
+        width: 131vw;
+    }
+    .heading{
+        font-size: 35px;
+        line-height: 38px;
+    }
+    .post-second{
+        position: relative;
+    left: -9rem;
+    top: 1rem;
+    width: 131vw;
+    }
+    .content{
+        font-size: 23px;
+    }
+    .works{
+        position: relative;
+    top: 26rem;
+    left: 12rem;
+    font-size: 24px;
+    }
+    .work-ls1{
+        position: relative;
+        top: 21rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-second{
+        width: 139vw;
+        position: relative;
+        left: -10rem;
+    }
+    .content-part{
+        position: relative;
+        top: -4rem;
+        width: 100%; 
+    }
+    .line{
+    top: 12rem;
+    width: 98%;
+    position: relative;
+    left: -1rem;
+    }
+    .hided-line{
+        display: none;
+    }
+    .work-ls{
+        display: none;
+    }
+    .year{
+        height: 4vh;
+    width: 21vw;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    }
+    .After-year{
+        color: #8695A4;
+    font-size: 32px;
+    position: relative;
+    top: -2rem;
+    left: 2rem;
+    }
+    .paragraph-after-image{
+        font-size: 30px;
+    position: relative;
+    top: -4rem;
+    left: -1rem;
+    }
+    .footer{
+        position: relative;
+        top: 5rem;
+    }
+    .copyrights{
+        position: relative;
+    left: -1rem;
+    }
+}
+@media(max-width:375px){
+    .container{
+        overflow-x: hidden;
+        padding: 0rem;
+        width: 148vw;
+    }
+    .navbar{
+        display: none;
+    }
+    .container > .navbar {
+    position: relative;
+    left: 59%;
+    top: -1%;
+    
+    }
+    .container > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    top: 2em;
+    left: 31em;
+    }
+    .container > .nav-btn > label {
+    display: inline-block;
+    width: 13vh;
+    height: 11vh;
+    padding: 13px;
+    }
+    .container > .nav-btn > label > span {
+    display: block;
+    width: 6vh;
+    height: 2vh;
+    border-top: 4px solid #21243D;
+    }
+    .container > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+    }
+    .container > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    }
+    .container > .nav-links {
+    position: absolute;
+    display: block;
+    width: 46vh;
+    line-height: 4vh;
+    transition: all 0.1s ease-in;
+    overflow-y: hidden;
+    top: 3em;
+    left: 8em;
+    }
+    .container > .nav-links > a {
+    background: white !important;
+    display: block;
+    width: 103px;
+    position: relative;
+    left: 68%;
+    top:3%;
+    }
+    .first-content-div {
+        width: 160%;
+        display: flex;
+        flex-direction: column;
+    }   
+    .profile{
+        position: absolute;
+    left: 45%;
+    top: 20%;
+    }
+    .display-picture {
+        height: 70% !important;
+        cursor: pointer;
+    }
+    .intro {
+        position: relative;
+        top: 24rem;
+        left: -4rem;
+        text-align: center;
+        width: 100vw;
+    }
+    .para-first {
+        width: 66vh;
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        left: -2rem;
+        line-height: 28px;
+    }
+    .second-content-div{
+        height: 140vh;
+    }
+    .post-first{
+        width: 140vw;
+    }
+    .post-second{
+        width: 140vw;
+    }
+    .image-second{
+        width: 144vw;
+    }
+    .year {
+        height: 6vh;
+        width: 28vw;
+    }
+}

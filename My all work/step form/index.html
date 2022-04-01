@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <form  action="#" class="stepform" autocomplete="off">
+        <div class="field-1" id="field-1">
+            <p>Full Name: </p>
+            <input type="text" name="fullname" id="fname" placeholder="Enter your full name" class="input" onkeyup="rmverror()" onfocus="removeError()"><br/>
+            <label class="hidden" id="NameError">Name is not valid</label>
+            <p>Email: </p>
+            <input type="email" name="email" id="email" placeholder="Enter a valid email" class="input"  onkeyup="rmverror()" onfocus="removeError()"><br/>
+            <label class="hidden" id="EmailError">Email is not valid</label>
+            <input type="button" onclick="return nextpage2();" class="btn" value="Next">
+        </div>
+
+        <div class="hidden" id="field-2">
+            <p>Date of Birth</p>
+            <input type="date" name="dob" id="dob" placeholder="Date of birth" class="input" onkeyup="rmverror()" onfocus="removeError()"><br/>
+            <label class="hidden" id="DOBError">This field is rquired</label>
+            <p>Address</p>
+            <textarea name="addr" id="addr" class="input" onkeyup="rmverror()" onfocus="removeError()"></textarea><br/>
+            <label class="hidden" id="AddError">This field is rquired</label>
+            <input type="button" onclick="prvpage1()" class="btn" value="Previous" ></input>
+            <input type="button" onclick="return nextpage3()" class="btn" value="Next"></input>
+        </div>
+
+        <div class="hidden" id="field-3">
+            <p>Password</p>
+            <input type="password" name="pass" id="pass" class="input" onkeyup="rmverror()" onfocus="removeError()"><br/>
+            <label class="hidden" id="PassError">Password is not strong</label>
+            <p>Confirm Password</p>
+            <input type="password" name="cnpsw" id="cnpsw" class="input" onkeyup="rmverror()" onfocus="removeError()"><br/>
+            <label class="hidden" id="CpassError">Password does not match</label>
+            <input type="button" onclick="prvpage2()" class="btn" value="Previous"></input>
+            <input type="submit" onclick="return Complete()" class="btn" value="Submit"></input>
+        </div>
+    </form>
+   
+</div>
+
+</body>
+
+</html>
