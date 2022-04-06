@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script2.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/plugins/slick/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./assets/plugins/slick/slick/slick.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+
+  <!-- <link rel="stylesheet" href="./assets/css/footer.css"> -->
+  <title>Ecommerce Template</title>
+</head>
+
+<body>
+
+<!--==================== COPY FROM HERE ============= -->
+  <div class="mainnav-container">
+    <div class="container-fluid">
+      <!--================= NAVIGATION BAR ==============-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <img src="./assets/img/logo.png" alt="" class="img">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+            <form class="d-flex">
+              <ul class="navbar-nav me-auto my-2 my-lg-2 navbar-nav-scroll"
+                style="--bs-scroll-height: px; margin-left: 220px;">
+                <li class="nav-item">
+                  <a class="nav-link active fa-pull-right" aria-current="page" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fa-pull-right" aria-current="page" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fa-pull-right" aria-current="page" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fa-pull-right" aria-current="page" href="#">Contact</a>
+                </li>
+                <button class="btn navbtn btn-outline-success" type="submit">Sign Up</button>
+                <button class="btn navbtn btn-outline-success" type="submit">Log In</button>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--================= NAVIGATION BAR END ==============-->
+
+      <!--================= SKIP THIS DIVISION ============-->
+      <div class="d-flex vegi-division">
+        <div class="lorem-para-top">
+          <p>Lorem ipsum dolor sit</p>
+          <h4 class="vegi-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+          <button class="btn btn-success">Sign Up</button>
+        </div>
+        <div class="vegi-basket1">
+          <img src="./assets/img/img3.png" alt="" class="img-responsive vegi-basket-img1">
+        </div>
+        <div class="vegi-basket2">
+          <img src="./assets/img/img4.png" alt="" class="img-responsive vegi-basket-img2">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!--================= Categories Division =============-->
+  <div class="container px-4" style="margin-bottom: 70px;">
+    <p class="fw-bold">Categories</p>
+    <div class="row gx-3 gap-5">
+      <div class="col-md-1 col-xs-6 card categories gap-3">
+        <img src="./assets/img/img5.png" alt="" class="img-responsive categories-img">
+        <p>Beverages</p>
+      </div>
+      <div class="col-md-1 col-xs-6 card categories gap-3">
+        <img src="./assets/img/img6.png" alt="" class="img-responsive categories-img">
+        <p>Dairy</p>
+      </div>
+      <div class="col-md-1 col-xs-6 card categories gap-3">
+        <img src="./assets/img/img7.png" alt="" class="img-responsive categories-img">
+        <p>Meat</p>
+      </div>
+      <div class="col-md-1 col-xs-6 card categories gap-3">
+        <img src="./assets/img/img8.png" alt="" class="img-responsive categories-img">
+        <p>Spices & Herbs</p>
+      </div>
+      <div class="col-md-1 col-xs-6 card categories gap-3">
+        <img src="./assets/img/img9.png" alt="" class="img-responsive categories-img">
+        <p>Stationery</p>
+      </div>
+      <div class="col-md-1 col-xs-6 card categories gap-3">
+        <img src="./assets/img/img10.png" alt="" class="img-responsive categories-img">
+        <p>Costmetic</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!--================== OFFER DIVISION ===============-->
+  <!-- <div class="container mt-5 text-success">
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <p class="fw-bold h4">Offers</p>
+      </div>
+      <div class="col-md-6 text-end">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </div>
+    </div>
+    <div class="row gap-5 mt-5">
+      <div class="col-md-2 col-xs-12 card offers">
+        <img src="./assets/img/img11.png" alt="" class="img-reponsive offer-image">
+        <div class="offer-details d-flex flex-column text-dark fw-bold px-3">
+          <p>Cottage Cheese</p>
+          <p>3 kg </p>
+          <p>$100</p>
+          <p><s>$100</s></p>
+        </div>
+      </div>
+      <div class="col-md-2 col-xs-12 card offers">
+        <img src="./assets/img/img12.png" alt="" class="img-reponsive offer-image">
+         <div class="offer-details d-flex flex-column text-dark fw-bold px-3">
+          <p>Cabbage </p>
+          <p>1 kg </p>
+          <p>$20</p>
+          <p><s>$40</s></p>
+        </div>
+      </div>
+      <div class="col-md-2 col-xs-12 card offers">
+        <img src="./assets/img/img13.png" alt="" class="img-reponsive offer-image">
+         <div class="offer-details d-flex flex-column text-dark fw-bold px-3">
+          <p>Farmer’s Milk </p>
+          <p>1 litre </p>
+          <p>$20</p>
+          <p><s>$40</s></p>
+        </div>
+      </div>
+      <div class="col-md-2 col-xs-12 card offers">
+        <img src="./assets/img/img14.png" alt="" class="img-reponsive offer-image">
+         <div class="offer-details d-flex flex-column text-dark fw-bold px-3">
+          <p>Eco-Green Shampoo </p>
+          <p>1 litre </p>
+          <p>$20</p>
+          <p><s>$40</s></p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container best-selling">
+    <div class="row">
+        <div class="row product-upper">
+            <div class="col-md-10 product-heading">
+                <p id="product-head">Offers</p>
+            </div>
+            <div class="row col-md-2 controls">
+
+                <div class="prev-bs col-md-6"><i class="fa fa-chevron-circle-left slide-arrow prev-arrow"
+                        id="lrArrows"></i>
+                </div>
+                <div class="nxt-bs col-md-6"><i class="fa fa-chevron-circle-right slide-arrow next-arrow"
+                        id="lrArrows"></i>
+                </div>
+            </div>
+        </div>
+        <section class="var-bs slider">
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/img11.png" id="displayimage">
+                                <span class="card-title">Cottage Cheese</span><br>
+                                <span>3 kg</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$100</p>
+                                <p><s>$100</s></p>
+                            </div>
+                            <!-- <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/img12.png" id="displayimage">
+                                <span class="card-title">Cabbage </span><br>
+                                <span>1 kg</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$20</p>
+                                <p><s>$40</s></p>
+                            </div>
+                            <!-- <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/img13.png" id="displayimage">
+                                <span class="card-title">Farmer's Milk</span><br>
+                                <span>1 Litre</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$20</p>
+                                <p><s>$40</s></p>
+                            </div>
+                            <!-- <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/img14.png" id="displayimage">
+                                <span class="card-title">Eco-Green Shampoo </span><br>
+                                <span>1 Litre</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$40</p>
+                                <p><s>$60</s></p>
+                            </div>
+                            <!-- <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/best2.png" id="displayimage">
+                                <span class="card-title">Ice-cream Sunday</span>
+                                <span>1 pack</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$2</p>
+                                <p><s>$4</s></p>
+                            </div>
+                            <!-- <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!--================= BEST SELLING DIVISION ===============-->
+  <div class="back-best">
+      <div class="container best-selling">
+    <div class="row">
+        <div class="row product-upper">
+            <div class="col-md-10 product-heading">
+                <p id="product-head">Best Selling Products</p>
+            </div>
+            <div class="row col-md-2 controls">
+
+                <div class="prev-bs col-md-6"><i class="fa fa-chevron-circle-left slide-arrow prev-arrow"
+                        id="lrArrows"></i>
+                </div>
+                <div class="nxt-bs col-md-6"><i class="fa fa-chevron-circle-right slide-arrow next-arrow"
+                        id="lrArrows"></i>
+                </div>
+            </div>
+        </div>
+        <section class="var-bs slider">
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/best1.png" id="displayimage">
+                                <span class="card-title">Eco-Face Cream</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$120</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/best2.png" id="displayimage">
+                                <span class="card-title">Ice-cream Sunday</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$25</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/best3.png" id="displayimage">
+                                <span class="card-title">Farmer's Milk</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$20</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/best1.png" id="displayimage">
+                                <span class="card-title">Eco-Face Cream</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$120</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/best2.png" id="displayimage">
+                                <span class="card-title">Ice-cream Sunday</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$2</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</div>
+
+<!--================== POPULAR PRODUCTS ================-->
+<div class="container popular-products">
+    <div class="row">
+        <div class="row product-upper">
+            <div class="col-md-10 product-heading">
+                <p id="product-head">Popular Products</p>
+            </div>
+            <div class="row col-md-2 controls">
+
+                <div class="prev col-md-6"><i class="fa fa-chevron-circle-left slide-arrow prev-arrow"
+                        id="lrArrows"></i>
+                </div>
+                <div class="nxt col-md-6"><i class="fa fa-chevron-circle-right slide-arrow next-arrow"
+                        id="lrArrows"></i>
+                </div>
+            </div>
+        </div>
+        <section class="variable slider">
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/p1.png" id="displayimage">
+                                <span class="card-title">Hand-Sanitizer</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$20</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/p2.png" id="displayimage">
+                                <span class="card-title">Beef Meat</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$50</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/p3.png" id="displayimage">
+                                <span class="card-title">Cabbage</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$20</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/p4.png" id="displayimage">
+                                <span class="card-title">Eco-Shampoo</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$25</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="width: 250px;">
+                            <div class="card-image">
+                                <img src="./assets/img/p1.png" id="displayimage">
+                                <span class="card-title">Eco-Shampoo</span>
+                            </div>
+                            <div class="card-content">
+                                <p>$20</p>
+                            </div>
+                            <div class="combo">
+                                <div class="quantity plus-minus">
+                                    <button class="minus-btn" type="button" name="button">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    <input type="text" name="name" value="0">
+                                    <button class="plus-btn" type="button" name="button">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <img src="./assets/img/basket.png" id="bag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="down" style="background-image: url('./assets/img/fruits.png');background-repeat: no-repeat;background-position: 0% 42%;background-size: 110vh 70vh;
+height: 70vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-7 ">
+                <p class="down-head">Lorem Ipsum Dolor Sit Amet,<br> Consectetur Adipiscing Elit.</p>
+                <p class="down-subHead">Subscribe to get 10% Discount and promotion</p>
+                <input type="text" class="mail-textbox" placeholder="Email address">
+                <button type="submit" class="btn-success">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!--================== FOOTER DIVISION ==============-->
+  <footer class="foot">
+    <div class="container">
+      <div class="row foot-up">
+        <div class="col-md-3 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item"><span class="footer-title">Services</span></li>
+            <li class="nav-item"><a class="nav-link" href="#">Email Marketing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Campaigns</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Branding</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Offline</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item"><span class="footer-title">About</span></li>
+            <li class="nav-item"><a class="nav-link" href="#">Our Story</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Benefits</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column">
+          <ul class="nav flex-column">
+            <li class="nav-item"><span class="footer-title">Help</span></li>
+            <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-column">
+          <img src="./assets/img/logo.png" class="img img-responsive">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 footer-collast">
+          <p class="last-items">Terms And Conditions</p>
+        </div>
+        <div class="col-md-7 footer-collast">
+          <p class="last-items">Privacy Policy</p>
+        </div>
+        <div class="col-md-3 footer-collast">
+
+
+          <a class="nav-link d-inline" href="#"><i class="fa-brands fa-facebook-f" id="icon"></i></a>
+          <a class="nav-link d-inline" href="#"><i class="fa-brands fa-twitter" id="icon"></i></a>
+          <a class="nav-link d-inline" href="#"><i class="fa-brands fa-instagram" id="icon"></i></a>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/plugins/slick/slick/slick.min.js"></script>
+</body>
+
+</html>
