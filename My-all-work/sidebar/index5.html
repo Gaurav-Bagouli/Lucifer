@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style5.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <h3>SpaceX</h3>
+            </div>
+
+            <ul class="list-unstyled components" style="text-align: center;">
+                <p>Welcome To SpaceX</p>
+                <li class="active">
+                    <a href="#" id="ships">Ships</a>
+                    <a href="#" id="capsules">Capsules</a>
+                    <a href="#" id="rockets">Rockets</a>
+                    <!-- <a href="#"></a> -->
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content" class="">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary ">
+                <div class="container-fluid">
+                    <h3 style="text-align: center;">All about SpaceX</h3>
+                    <button type="button" id="sidebarCollapse" class="navbar-btn active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>    
+                </div>
+            </nav><br>
+            <div id="ship-data"></div>
+            <div id="capsule-data"></div>
+            <div id="rocket-data"></div>
+
+    <div id="ship-details" style="display:none">
+        <div class="details">
+            <span style="font-weight: bold;">TITLE :-</span><span class="title"></span>
+        </div>
+        <img class="detail-img" scr="" />
+        <div>
+        <span>Click to see the complete details :- </span><span><a class="url" href="">Details</a></span>
+        </div>
+        <div>
+        <span>Type of the ship :- </span><span class="type"></span>
+       </div>
+       <div>
+        <span>Role of the ship :- </span><span class="roles"></span>
+       </div>
+    </div>
+
+    <div id="capsule-details" style="display:none">
+        <div class="details">
+            <span style="font-weight: bold;">TITLE :-</span> <span class="title"></span></span>
+        </div>
+        <div>
+        <span>Original Launch :- </span><span class="original_launch"></span>
+        </div>
+        <div>
+            <span>Original Launch Unix :- </span><span class="original_launch_unix"></span>
+        </div>
+        <div>
+            <span>Status :- </span><span class="status"></span>
+        </div>
+    </div>
+
+    <div id="rocket-details" style="display:none">
+        <div class="details">
+            <span style="font-weight: bold;">NAME :-</span> <span class="title"></span></span>
+        </div>
+        <img class="detail-img img-thumbnail" scr="" />
+        <div>
+        <span>ID :- </span><span class="id"></span>
+        </div>
+        <div>
+            <span>Cost per launch :- </span><span class="cost_per_launch"></span>
+        </div>
+        <div>
+            <span>Status :- </span><span class="first_flight"></span>
+        </div>
+    </div>
+    </div>            
+    </div>
+ 
+</body>
+
+</html>

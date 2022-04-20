@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Get Method</title>
+
+</head>
+
+<body>
+    <form action="#" id="myForm">
+        <input type="text" name="username" id="name">
+        <input type="text" name="useremail" id="name">
+    </form>
+    <button type="button" id="btn">Get</button>
+    <button type="button" id="btn2">Post</button>
+    <div id="collected-data"></div>
+    <script>
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                console.log('Get button clicked');
+                $.ajax({
+                    type: "GET",
+                    url:  `https://jsonplaceholder.typicode.com/posts`,
+                    cache: false,
+                    success: function (data) {
+                        let str = `<div>
+
+                           <table>
+                                <tr>
+
+                            <th>ID</th>    
+                            <th>Title</th>
+                               </tr>
+                               ${ data.map(item => {
+                                return ` <tr>
+                                    <td>${item.id}</td>
+                                    <td>${item.body}</td> 
+                                            </tr>`})}
+                            </table>
+                        </div>`
+                        $("#collected-data").html(str);
+                        console.log(data)
+                        // console.log(str);
+                    }
+                });
+            });
+            $("#btn2").click(function (e) {
+                e.preventDefault();
+                console.log('Post button clicked');
+                $.ajax({
+                    type: "POST",
+                    url: "https://jsonplaceholder.typicode.com/posts",
+                    cache: false,
+                    data: $("#myForm").serialize(),
+                    success: function (data) {
+                        console.log(data);
+                        $("input[name=username]").val("");
+                        $("input[name=useremail]").val("");
+                         
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>
